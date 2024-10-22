@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { sidebarLinks } from '@/constants';
 import { usePathname } from 'next/navigation';
+import Footer from './Footer';
 
 interface SidebarProps {
   user: {
@@ -60,7 +61,7 @@ className={cn({
         })}
         USER
       </nav>
-      FOOTER
+    <Footer user= {user}/>
     </section>
   );
 }
